@@ -13,12 +13,10 @@
 
     <div class="mahenan">
       <span>
-        <span>mahenan的master分支修改</span>
+        <span>mahenan的b_mahenan分支修改</span>
       </span>
-    </div>
-    <div class="mahenan">
       <span>
-        <div>mahenan的master分支修改</div>
+        <div>mahenan的b_mahenan分支修改</div>
       </span>
     </div>
   </div>
