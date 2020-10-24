@@ -1,0 +1,74 @@
+<template>
+  <div>
+    <div class="banner" @click='clickFn'>
+      <div class="banner-item">index</div>
+      <div class="banner-item">index</div>
+      <div class="banner-item">index</div>
+      <div class="banner-item">index</div>
+      <div class="banner-item">index</div>
+      <div class="banner-item">index</div>
+    </div>
+    <div class="mahenan">askjdhaksjd</div>
+    <div v-color id="mahenan">mahenan</div>
+  </div>
+</template>
+<script lang="ts">
+    import {Component, Vue, Watch, Prop, Emit} from 'vue-property-decorator';
+    import {getName} from '@/util/index'
+    import _ from 'lodash'
+    @Component({
+
+    })
+    export default class Index extends Vue{
+      private mounted(){
+        console.log(_);
+        getName('index')
+      }
+      private clickFn(){
+        console.log(1);
+      }
+    }
+</script>
+<style scoped lang="less">
+  .banner{
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+    &:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: " ";
+      pointer-events: none;
+      width: 200%;
+      transform-origin: 0 0;
+      transform: scale(0.5);
+      height: 200%;
+      border: 1px solid green;
+    }
+    &-item:nth-child(2n){
+      color: red;
+    }
+    .mahenan{
+      color: red;
+    }
+  }
+
+  @width: 10px;
+  @height: @width + 10px;
+
+  .color{
+    color: red;
+  }
+  .mahenan {
+    display: inline-block;
+    width: @width;
+    height: @height;
+    .color()
+  }
+</style>
+<!--<style scoped>-->
+<!--  .banner{-->
+<!--    color: red;-->
+<!--  }-->
+<!--</style>-->
