@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <!--write something no changed-->
-    <div>App</div>
-    <router-link to="/index">/index</router-link>
-    <router-link to="/about">/about</router-link>
     <router-view></router-view>
   </div>
 </template>
