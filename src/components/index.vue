@@ -48,6 +48,7 @@
       private mahenan1:string = 'mahenan1';
       private mahenan2:string = 'mahenan2';
       private mahenan3:string = 'mahenan3';
+      private mahenan4:string = 'mahenan4';
       private mounted(){
         console.log(_);
         getName('index')
