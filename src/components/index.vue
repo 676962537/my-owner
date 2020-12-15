@@ -40,6 +40,7 @@
     export default class Index extends Vue{
       private name:string = 'xxxxxx';
       private name1:string = 'xxxxxx';
+      private name2:string = 'xxxxxx';
       private mounted(){
         console.log(_);
         getName('index')
