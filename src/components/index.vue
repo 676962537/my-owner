@@ -38,7 +38,7 @@
 
     })
     export default class Index extends Vue{
-      private name:string = 'mahenan b_mahenan';
+      private name:string = 'mahenan b_mahenan b_mahenan2';
       private mounted(){
         console.log(_);
         getName('index')
