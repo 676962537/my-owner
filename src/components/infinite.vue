@@ -19,21 +19,23 @@
         private pageIndex:number = 0;
         private pageSize:number = 20;
         private pageFlag:boolean = true;
+
+
         private async mounted(){
-            // this.data = [1,2]
             this.data = this.dataList;
             await this.$nextTick();
             let observer = new IntersectionObserver((([entry]) => {
-                console.log(entry.intersectionRatio);
                 console.log(entry);
-                if(entry.intersectionRatio <= 0) return;
+                if(!entry.isIntersecting) return;
                 this.getData();
             }),{
-                threshold:[0],
+                threshold:[1],
                 rootMargin:'0px 0px 0px 0px'
             });
             observer.observe(document.getElementById('footer'))
         }
+
+
         private getData(){
             if(!this.pageFlag){
                 return;
