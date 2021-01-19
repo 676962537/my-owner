@@ -22,6 +22,21 @@
 
 
         private async mounted(){
+            const fn = () => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        resolve(1);
+                    },2000)
+                })
+            }
+            try{
+                const name = await fn();
+                console.log(1)
+            }catch(e){
+                console.log(2)
+            }
+            console.log(3);
+
             this.data = this.dataList;
             await this.$nextTick();
             let observer = new IntersectionObserver((([entry]) => {
