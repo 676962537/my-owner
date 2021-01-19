@@ -7,6 +7,7 @@
       <div class="banner-item">index</div>
       <div class="banner-item">index</div>
       <div>mahenan git fetch 测试</div>
+      <div>mahenan git fetch 测试2</div>
       <div class="banner-item">index</div>
     </div>
     <div class="mahenan">askjdhaksjd</div>
