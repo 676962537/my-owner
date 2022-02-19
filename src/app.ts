@@ -32,3 +32,6 @@ new Vue({
     store,
     render:h => h(App)
 }).$mount("#app");
+
+console.log('branch2-c1')
+
