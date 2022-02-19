@@ -24,6 +24,8 @@ Vue.directive('color',{
     }
 });
 
+console.log('branch1---c1')
+
 new Vue({
     router,
     store,
