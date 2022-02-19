@@ -34,4 +34,5 @@ new Vue({
 }).$mount("#app");
 
 console.log('branch2-c1')
+console.log('branch2-c2')
 
