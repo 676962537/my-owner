@@ -15,8 +15,8 @@
     components:{}
   })
   export default class App extends Vue {
-    private created(){
-      console.log('branch2');
+    private mounted(){
+      console.log('branch1')
     }
   }
 </script>
