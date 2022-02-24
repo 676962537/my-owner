@@ -18,6 +18,9 @@
     private mounted(){
       console.log('branch1')
     }
+    private created(){
+      console.log('branch1')
+    }
   }
 </script>
 
