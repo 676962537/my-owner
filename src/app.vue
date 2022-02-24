@@ -21,6 +21,9 @@
     private created(){
       console.log('branch1')
     }
+    private getData(){
+      console.log('branch2')
+    }
   }
 </script>
 
