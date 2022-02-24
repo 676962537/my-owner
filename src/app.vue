@@ -22,7 +22,7 @@
       console.log('branch1')
     }
     private getData(){
-      console.log('branch2')
+      console.log('branch1')
     }
     private getName(){
       console.log('master')
