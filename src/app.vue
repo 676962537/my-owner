@@ -24,6 +24,9 @@
     private getData(){
       console.log('branch2')
     }
+    private getName(){
+      console.log('master')
+    }
   }
 </script>
 
